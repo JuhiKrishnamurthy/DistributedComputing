@@ -1,0 +1,12 @@
+k1 @#SEP#@ v1
+s1 @#SEP#@ 12
+Stack1 @#SEP#@  $*STACK_TYPE$* 
+Stack1 $*STACKSEP*$ 0 @#SEP#@ Val1
+Stack1 $*STACKSEP*$ top @#SEP#@ Stack1 $*STACKSEP*$ 0
+Stack2 @#SEP#@  $*STACK_TYPE$* 
+Stack2 $*STACKSEP*$ 0 @#SEP#@ S1
+Stack2 $*STACKSEP*$ top @#SEP#@ Stack2 $*STACKSEP*$ 0
+ABC @#SEP#@  #!SET_TYPE!# 
+ABC #!SET_SEP!#  @#SEP#@ V!
+Stack2 $*STACKSEP*$ 0 @#SEP#@  @#DEL#@ 
+Stack2 $*STACKSEP*$ top @#SEP#@ Stack2 $*STACKSEP*$ -1

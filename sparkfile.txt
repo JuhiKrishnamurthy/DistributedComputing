@@ -1,0 +1,52 @@
+22/11/27 09:56:56 WARN Utils: Your hostname, Juhis-MacBook-Air.local resolves to a loopback address: 127.0.0.1; using 172.16.149.60 instead (on interface en0)
+22/11/27 09:56:56 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+22/11/27 09:56:57 INFO SparkContext: Running Spark version 3.3.1
+22/11/27 09:56:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22/11/27 09:56:57 INFO ResourceUtils: ==============================================================
+22/11/27 09:56:57 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/11/27 09:56:57 INFO ResourceUtils: ==============================================================
+22/11/27 09:56:57 INFO SparkContext: Submitted application: PySpark Word Count Exmaple
+22/11/27 09:56:57 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/11/27 09:56:57 INFO ResourceProfile: Limiting resource is cpu
+22/11/27 09:56:57 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/11/27 09:56:57 INFO SecurityManager: Changing view acls to: juhi
+22/11/27 09:56:57 INFO SecurityManager: Changing modify acls to: juhi
+22/11/27 09:56:57 INFO SecurityManager: Changing view acls groups to: 
+22/11/27 09:56:57 INFO SecurityManager: Changing modify acls groups to: 
+22/11/27 09:56:57 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(juhi); groups with view permissions: Set(); users  with modify permissions: Set(juhi); groups with modify permissions: Set()
+22/11/27 09:56:58 INFO Utils: Successfully started service 'sparkDriver' on port 62698.
+22/11/27 09:56:58 INFO SparkEnv: Registering MapOutputTracker
+22/11/27 09:56:58 INFO SparkEnv: Registering BlockManagerMaster
+22/11/27 09:56:58 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/11/27 09:56:58 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/11/27 09:56:58 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/11/27 09:56:58 INFO DiskBlockManager: Created local directory at /private/var/folders/ql/2555h7tn06x28gvdj7n6bk300000gn/T/blockmgr-37c69dba-a32e-4ba2-9562-bd039847b9f4
+22/11/27 09:56:58 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+22/11/27 09:56:58 INFO SparkEnv: Registering OutputCommitCoordinator
+22/11/27 09:56:58 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+22/11/27 09:56:58 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+22/11/27 09:56:58 INFO Executor: Starting executor ID driver on host 172.16.149.60
+22/11/27 09:56:58 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+22/11/27 09:56:58 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 62700.
+22/11/27 09:56:58 INFO NettyBlockTransferService: Server created on 172.16.149.60:62700
+22/11/27 09:56:58 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/11/27 09:56:58 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.16.149.60, 62700, None)
+22/11/27 09:56:58 INFO BlockManagerMasterEndpoint: Registering block manager 172.16.149.60:62700 with 434.4 MiB RAM, BlockManagerId(driver, 172.16.149.60, 62700, None)
+22/11/27 09:56:58 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.16.149.60, 62700, None)
+22/11/27 09:56:58 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 172.16.149.60, 62700, None)
+Traceback (most recent call last):
+  File "/Users/juhi/Git_Repository/DistributedComputing/Basic_Spark.py", line 6, in <module>
+    words = sc.textFile(sys.argv[1]).flatMap(lambda line: line.split(" "))
+IndexError: list index out of range
+22/11/27 09:56:59 INFO SparkContext: Invoking stop() from shutdown hook
+22/11/27 09:56:59 INFO SparkUI: Stopped Spark web UI at http://172.16.149.60:4041
+22/11/27 09:56:59 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+22/11/27 09:56:59 INFO MemoryStore: MemoryStore cleared
+22/11/27 09:56:59 INFO BlockManager: BlockManager stopped
+22/11/27 09:56:59 INFO BlockManagerMaster: BlockManagerMaster stopped
+22/11/27 09:56:59 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+22/11/27 09:56:59 INFO SparkContext: Successfully stopped SparkContext
+22/11/27 09:56:59 INFO ShutdownHookManager: Shutdown hook called
+22/11/27 09:56:59 INFO ShutdownHookManager: Deleting directory /private/var/folders/ql/2555h7tn06x28gvdj7n6bk300000gn/T/spark-a0845d3c-e2cf-4cfb-b883-a445337f2bba/pyspark-89235878-36b7-4ff1-95b6-d13827849528
+22/11/27 09:56:59 INFO ShutdownHookManager: Deleting directory /private/var/folders/ql/2555h7tn06x28gvdj7n6bk300000gn/T/spark-a0845d3c-e2cf-4cfb-b883-a445337f2bba
+22/11/27 09:56:59 INFO ShutdownHookManager: Deleting directory /private/var/folders/ql/2555h7tn06x28gvdj7n6bk300000gn/T/spark-b07cc5b5-b3dc-4262-a598-cd17c740a1b0
